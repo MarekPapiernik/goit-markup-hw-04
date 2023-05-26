@@ -41,6 +41,7 @@ body {
   --brand-blue: #2196f3;
   --gray-color: #757575;
   --icon-color: #f5f4fa;
+  --icon-fill: #afb1b8;
 }
 
 .blue {
@@ -379,7 +380,11 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
+
+/* ========= ikony społecznościowe John Doe ====================*/
+
 .social-links-container {
   width: 206px;
   height: 58px;
@@ -391,7 +396,7 @@ li {
 }
 
 .social-link {
-  fill: #afb1b8;
+  fill: var(--icon-fill);
   width: 100%;
   height: 100%;
   display: flex;
@@ -409,4 +414,41 @@ li {
   background-color: var(--brand-blue);
   fill: var(--background-color);
   border-radius: 50%;
+}
+
+/* ==================== klienci ============ */
+.container-clients {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-title {
+  margin-bottom: 50px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  color: var(--icon-fill);
+  border-radius: 4px;
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  margin-right: 30px;
+}
+.client-item:last-child {
+  margin-right: 0px;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--brand-blue);
+  fill: var(--brand-blue);
 }

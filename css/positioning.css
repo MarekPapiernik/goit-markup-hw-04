@@ -144,7 +144,7 @@ address {
 
 .team {
   width: 1600px;
-  height: 648px;
+  height: 708px;
   left: 0px;
   top: 1449px;
   background: #f5f4fa;
@@ -186,4 +186,7 @@ address {
   margin-top: 94px;
   margin-left: 0;
   margin-right: 0;
+}
+.clients-section {
+  margin: 94px 215px;
 }
