@@ -99,12 +99,12 @@ main {
 }
 
 .portfolio-bottom-logo {
-  padding: 60px 1040px 20px 15px;
+  padding: 60px 70px 20px 15px;
 }
 
 .foot-adress {
   color: var(--background-color);
-  padding: 0px 938px 60px 15px;
+  padding: 0px 70px 60px 15px;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -189,4 +189,10 @@ address {
 }
 .clients-section {
   margin: 94px 215px;
+}
+/* ====================== footer DOŁĄCZ DO NAS==================== */
+.join-us {
+  margin: -200px 0px 0px 300px;
+  display: flex;
+  flex-wrap: wrap;
 }
