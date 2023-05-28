@@ -23,7 +23,10 @@
   line-height: 1.6;
   font-weight: 500;
   padding: 6px 22px 6px 22px;
-  border: none;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .buttons-one {
@@ -141,6 +144,8 @@ a {
 }
 
 .header-link {
+  display: flex;
+  justify-content: baseline;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -359,10 +364,12 @@ li {
   list-style-type: none;
 }
 .envelope {
-  color: var(--gray-color);
+  fill: currentColor;
+  margin-right: 10px;
 }
 .smartphone {
-  color: var(--gray-color);
+  fill: currentColor;
+  margin-right: 10px;
 }
 .index-icons {
   width: 270px;
@@ -409,11 +416,7 @@ li {
 }
 
 /* ==================== klienci ============ */
-.container-clients {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .client-list {
   display: flex;
   justify-content: center;
@@ -444,12 +447,16 @@ li {
   border-color: var(--brand-blue);
   fill: var(--brand-blue);
 }
+.client-icon {
+  min-width: 50%;
+  min-height: 50%;
+}
 
 /* ================== footer links ================= */
 
 footer {
-  width: 1600px;
   height: 252px;
+  width: 1600px;
   display: flex;
   margin: 0 auto;
   background: #2f303a;
@@ -457,6 +464,8 @@ footer {
 
 .footer-join-title {
   color: var(--background-color);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .footer-social-link {
@@ -478,14 +487,26 @@ footer {
 .footer-icon-element {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .footer-icon-element:last-child {
   margin-right: 0;
 }
 .footer-links-container {
-  margin: 70px 300px 0px 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0;
+  margin-top: 20px;
+}
+.footer-all {
+  display: flex;
+}
+.link-footer {
+  padding-top: 20px;
+  display: block;
+}
+.mail-footer {
+  padding-bottom: 9px;
 }

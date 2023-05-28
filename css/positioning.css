@@ -1,5 +1,6 @@
 .container {
   width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -17,8 +18,8 @@ menu {
 
 .top-menu-index {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 1600px;
   height: 80px;
 }
 
@@ -36,14 +37,20 @@ menu {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   justify-content: center;
 }
 
 .foto-list {
   flex-direction: column;
+  flex-basis: calc((100% - 90px) / 3);
+}
 
-  flex-basis: calc((100% - 60px) / 3);
+.foto-list:hover,
+.foto-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 img {
@@ -62,7 +69,8 @@ img {
   display: flex;
   gap: 50px;
   margin-left: 345px;
-  vertical-align: middle;
+
+  justify-content: space-around;
 }
 
 .first-baby-index {
@@ -73,8 +81,8 @@ img {
 
 .second-baby-index {
   display: flex;
+
   gap: 50px;
-  margin-left: 371px;
 }
 
 figure {
@@ -85,10 +93,8 @@ figure {
 
 header {
   border-bottom: 1px solid #ececec;
-
   width: 1600px;
-  align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 main {
@@ -99,12 +105,25 @@ main {
 }
 
 .portfolio-bottom-logo {
-  padding: 60px 70px 20px 15px;
+  padding-top: 60px;
 }
 
-.foot-adress {
+.foot-address {
   color: var(--background-color);
-  padding: 0px 70px 60px 15px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.foot-address-two {
+  color: var(--background-color);
+  font-size: 14px;
+  line-height: 1.7;
+  padding-bottom: 9px;
+}
+
+.foot-address-three {
+  padding-bottom: 9px;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -192,7 +211,8 @@ address {
 }
 /* ====================== footer DOŁĄCZ DO NAS==================== */
 .join-us {
-  margin: -200px 0px 0px 300px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 206px;
+  height: 80px;
+  margin-top: 72px;
+  margin-left: 70px;
 }
